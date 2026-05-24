@@ -1,0 +1,166 @@
+.prose {
+  max-width: 46rem;
+  color: #111111;
+  font-family: 'Georgia', 'Source Serif Pro', serif;
+  line-height: 1.82;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: #111111;
+  margin-top: 2.4rem;
+  margin-bottom: 0.85rem;
+  line-height: 1.2;
+}
+
+.prose h1 {
+  font-size: 2.25rem;
+}
+
+.prose h2 {
+  font-size: 1.65rem;
+}
+
+.prose h3 {
+  font-size: 1.28rem;
+}
+
+.prose p,
+.prose ul,
+.prose ol,
+.prose blockquote,
+.prose dl,
+.prose table {
+  max-width: 46rem;
+}
+
+.prose p {
+  margin: 1.25rem 0;
+  color: #333333;
+}
+
+.prose ul,
+.prose ol {
+  margin: 1rem 0 1rem 1.4rem;
+  padding: 0;
+}
+
+.prose li {
+  margin: 0.35rem 0;
+}
+
+.prose blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid var(--accent);
+  background: #f3f3ef;
+  color: #333333;
+}
+
+.prose hr {
+  max-width: 46rem;
+  margin: 2.4rem 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
+.prose a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(38, 63, 94, 0.3);
+  text-underline-offset: 0.18em;
+}
+
+.prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+  background: var(--code-bg);
+  padding: 0.2rem 0.45rem;
+  border-radius: 0.25rem;
+  color: var(--accent);
+}
+
+.prose pre {
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.35rem;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 0.45rem;
+  overflow-x: auto;
+}
+
+.prose pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid var(--border);
+  padding: 0.85rem 1rem;
+}
+
+.prose th {
+  background: #faf9f5;
+  font-weight: 700;
+}
+
+.tag-pill {
+  display: inline-flex;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.tag-pill::before {
+  content: "#";
+  color: var(--muted-strong);
+}
+
+.prose img {
+  margin: 1.75rem 0;
+  border-radius: 0.35rem;
+}
+
+.figcaption,
+.prose figcaption {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.callout {
+  max-width: 46rem;
+  margin: 1.5rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 0.4rem;
+  background: #f7f7f2;
+}
+
+.equation {
+  font-family: 'Cambria Math', 'Times New Roman', serif;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.equation-block {
+  max-width: 46rem;
+  margin: 1.4rem 0;
+  padding: 1rem 1.2rem;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  background: #f7f7f2;
+  text-align: center;
+}
