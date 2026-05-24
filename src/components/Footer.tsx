@@ -2,7 +2,7 @@
   return (
     <footer>
       <div className="footer-inner">
-        <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.95rem' }}>
+        <p className="footer-copy">
           © 2026 Matt Perryman
         </p>
         <ul className="footer-list">

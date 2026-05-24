@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
@@ -12,6 +12,8 @@ export default function Layout({ children }: LayoutProps) {
   const { pathname } = useLocation();
   const pageTitle = getPageTitle(pathname);
 
+  usePhoneViewportClass();
+
   return (
     <>
       <SEO title={pageTitle} />
@@ -20,6 +22,31 @@ export default function Layout({ children }: LayoutProps) {
       <Footer />
     </>
   );
+}
+
+function usePhoneViewportClass() {
+  useEffect(() => {
+    const updateMode = () => {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      const shortestSide = Math.min(width, height);
+      const isPhone = shortestSide <= 480 || (width <= 760 && height <= 960);
+
+      document.body.classList.toggle('phone-mode', isPhone);
+      document.body.dataset.viewportMode = isPhone ? 'phone' : 'desktop';
+    };
+
+    updateMode();
+    window.addEventListener('resize', updateMode);
+    window.addEventListener('orientationchange', updateMode);
+
+    return () => {
+      window.removeEventListener('resize', updateMode);
+      window.removeEventListener('orientationchange', updateMode);
+      document.body.classList.remove('phone-mode');
+      delete document.body.dataset.viewportMode;
+    };
+  }, []);
 }
 
 function getPageTitle(pathname: string) {

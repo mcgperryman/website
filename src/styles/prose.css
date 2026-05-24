@@ -164,3 +164,48 @@
   background: #f7f7f2;
   text-align: center;
 }
+
+body.phone-mode .prose {
+  max-width: 100%;
+  line-height: 1.78;
+}
+
+body.phone-mode .prose h1 {
+  font-size: 1.9rem;
+}
+
+body.phone-mode .prose h2 {
+  font-size: 1.45rem;
+}
+
+body.phone-mode .prose h3 {
+  font-size: 1.18rem;
+}
+
+body.phone-mode .prose p,
+body.phone-mode .prose ul,
+body.phone-mode .prose ol,
+body.phone-mode .prose blockquote,
+body.phone-mode .prose dl,
+body.phone-mode .prose table,
+body.phone-mode .callout,
+body.phone-mode .equation-block {
+  max-width: 100%;
+}
+
+body.phone-mode .prose pre,
+body.phone-mode .equation-block {
+  margin-right: -0.25rem;
+  margin-left: -0.25rem;
+  padding: 0.9rem 1rem;
+}
+
+body.phone-mode .equation {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+body.phone-mode .equation-block .equation,
+body.phone-mode .equation-block {
+  white-space: nowrap;
+}
