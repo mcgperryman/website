@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # quantPrep Website
 
 A personal portfolio and writing site built with React, Vite, and TypeScript.
@@ -24,3 +25,7 @@ A personal portfolio and writing site built with React, Vite, and TypeScript.
 - `src/content/`: markdown content for writing and project pages
 - `src/data/`: navigation and site metadata
 - `public/`: static assets, resume, and favicon
+=======
+# website
+A personal website for me to discuss interesting things.
+>>>>>>> e7f9a4b330db42f2624de6b79257b05d18a814a5
